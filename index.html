@@ -119,17 +119,17 @@
         }, function (err, data) {
           map.on('load', function () {
 
-            //Add the the layer to the map 
+  //Add the the layer to the map 
             map.addLayer({
               'id': 'csvData',
-              'type': 'symbol',
+              'type': 'circle',
               'source': {
                 'type': 'geojson',
                 'data': data
               },
-                            'paint': {
-                'icon-size': 1,
-                'icon-image': "bicycle-15"
+              'paint': {
+                'circle-radius': 5,
+                'circle-color': "purple"
               }
             });
 
