@@ -178,12 +178,6 @@
       };
     });
 
-
-
-
-  </script>
-
-</body>
 // YOUR TURN: add your Mapbox access token 
 mapboxgl.accessToken = pk.eyJ1IjoiZGlldGhhcmQiLCJhIjoiY2tlbGRjN2gxMmJ0aDJ6b3kxdW50dWU1MCJ9.4aKzHyGfkEqq6eq3WwisoA;
  var map = new mapboxgl.Map({
@@ -251,4 +245,9 @@ map.on('mouseleave', 'places', function () {
 
 var bbox = turf.bbox(data);
 map.fitBounds(bbox, { padding: 50 });
-</html>
+ 
+  </script>
+
+</body>
+    
+    </html>
