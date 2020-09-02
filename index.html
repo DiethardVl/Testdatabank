@@ -123,12 +123,14 @@
             map.addLayer({
               'id': 'csvData',
               'type': 'symbol',
-                              'icon-size': 1,
-                'icon-image': "bicycle-15"
               'source': {
                 'type': 'geojson',
                 'data': data
               },
+                            'paint': {
+                'icon-size': 1,
+                'icon-image': "bicycle-15"
+              }
             });
 
 
